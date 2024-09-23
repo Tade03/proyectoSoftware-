@@ -86,3 +86,44 @@ h1.my-4 small {
 .dashboard-nav-item {
     height: 15px;
 }
+
+.btn-custom {
+    display: block;
+    width: 100%;
+    background-color: #4f46e5; /* Color de fondo */
+    color: white; /* Color del texto */
+    padding: 16px 32px; /* Padding para hacer el botón más grande */
+    text-align: center; /* Centrar el texto */
+    border-radius: 12px; /* Bordes redondeados */
+    font-size: 18px; /* Tamaño del texto */
+    font-weight: bold; /* Texto en negrita */
+    margin-bottom: 16px; /* Espacio entre botones */
+    text-decoration: none; /* Quitar subrayado */
+}
+
+.btn-custom:hover {
+    background-color: #4338ca; /* Color de fondo al pasar el ratón */
+}
+
+.btn-group {
+    display: flex;
+    gap: 10px; /* Espacio entre los botones */
+    margin-top: 20px;
+}
+
+.btn-small {
+    display: inline-block;
+    background-color: #4f46e5; /* Color de fondo */
+    color: white; /* Color del texto */
+    padding: 8px 16px; /* Padding para hacer el botón más pequeño */
+    text-align: center; /* Centrar el texto */
+    border-radius: 8px; /* Bordes redondeados */
+    font-size: 14px; /* Tamaño del texto */
+    font-weight: bold; /* Texto en negrita */
+    text-decoration: none; /* Quitar subrayado */
+    gap: 10px; /* Espacio entre los botones */
+}
+
+.btn-small:hover {
+    background-color: #4338ca; /* Color de fondo al pasar el ratón */
+}
