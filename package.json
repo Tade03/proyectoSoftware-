@@ -4,8 +4,9 @@
   "description": "Proyecto IS",
   "main": "index.js",
   "scripts": {
-    "buid": "npm run build:css",
-    "build:css": "tailwindcss build -i src/styles/tailwind.css -o src/styles/tailwind.output.css"
+    "build": "npm run build:css",
+    "build:css": "tailwindcss build -i src/styles/tailwind.css -o src/styles/tailwind.output.css",
+    "start": "your-start-command"
   },
   "keywords": [],
   "author": "",
