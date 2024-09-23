@@ -2,7 +2,7 @@
   "name": "proyectosoftware-",
   "version": "1.0.0",
   "description": "Proyecto IS",
-  "main": "index.js",
+  "main": "server.js",
   "scripts": {
     "build": "npm run build:css",
     "build:css": "npx tailwindcss build -i src/styles/tailwind.css -o src/styles/tailwind.output.css",
@@ -13,5 +13,8 @@
   "license": "ISC",
   "devDependencies": {
     "tailwindcss": "^3.4.12"
+  },
+  "dependencies": {
+    "mysql2": "^3.11.3"
   }
 }
