@@ -51,8 +51,34 @@ app.post('/login', (req, res) => {
     });
 });
 
-
 // Iniciar el servidor
 app.listen(port, () => {
     console.log(`Servidor corriendo en http://localhost:${port}`);
+});
+
+// Función para registrar un usuario
+function ingresarUsuario(email, nombre, apellidos, contrasena, callback) {
+    const sql = 'INSERT INTO usuarios (email, nombre, apellidos) VALUES (?, ?, ?)';
+    db.query(sql, [email, nombre, apellidos], (err, result) => {
+        if (err) {
+            callback(err, null);
+            return;
+        }
+
+        callback(null, result);
+    });
+}
+
+// Rutina para manejar el envio de datos al formulario
+app.post('/registro', (req, res) => {
+    const { email, nombre, apellidos, contrasena } = req.body;
+
+    ingresarUsuario(email, nombre, apellidos, contrasena, (err, result) => {
+        if (err) {
+            res.status(500).send('Error al registrar usuario');
+            return;
+        }
+
+        res.send('Usuario registrado correctamente');
+    });
 });

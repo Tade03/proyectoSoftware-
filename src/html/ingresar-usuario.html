@@ -29,34 +29,35 @@
             style="background-image: url('/proyectoSoftware-/public/images/LogoFondo.jpg'); background-size: cover; background-position: center;">
         </div>
         <div class="flex md:w-1/2 justify-center py-10 items-center bg-white">
-            <form class="bg-white">
+            <form class="bg-white" action="http://localhost:3000/ingresar-usuario" method="POST">
                 <h1 class="text-gray-800 font-bold text-2xl mb-4">Ingresar Usuario</h1>
                 <div class="flex items-center border-2 py-2 px-3 rounded-2xl mb-4">
                     <i class="fas fa-envelope h-5 w-5 text-gray-400"></i>
-                    <input class="pl-2 outline-none border-none" type="text" name="" id="" placeholder="Email" />
+                    <input class="pl-2 outline-none border-none" type="text" name="email" id="email" placeholder="Email" />
                 </div>
                 <div class="flex items-center border-2 py-2 px-3 rounded-2xl mb-4">
                     <i class="fas fa-user h-5 w-5 text-gray-400"></i>
-                    <input class="pl-2 outline-none border-none" type="text" name="" id="" placeholder="Nombre " />
+                    <input class="pl-2 outline-none border-none" type="text" name="nombre" id="nombre" placeholder="Nombre" />
                 </div>
                 <div class="flex items-center border-2 py-2 px-3 rounded-2xl mb-4">
                     <i class="fas fa-user-tag h-5 w-5 text-gray-400"></i>
-                    <input class="pl-2 outline-none border-none" type="text" name="" id="" placeholder="Apellidos" />
+                    <input class="pl-2 outline-none border-none" type="text" name="apellidos" id="apellidos" placeholder="Apellidos" />
                 </div>
                 <div class="flex items-center border-2 py-2 px-3 rounded-2xl">
                     <i class="fas fa-lock h-5 w-5 text-gray-400"></i>
-                    <input class="pl-2 outline-none border-none" type="text" name="" id="" placeholder="Contraseña" />
+                    <input class="pl-2 outline-none border-none" type="password" name="contraseña" id="contraseña" placeholder="Contraseña" />
                 </div>
                 <div class="btn-group">
-                    <a href="" class="btn-small">
+                    <button type="submit" class="btn-small">
                         <i class="fas fa-sign-in-alt"></i> Aceptar
-                    </a>
+                    </button>
                     <a href="" class="btn-small">
                         <i class="fas fa-edit"></i> Cancelar
                     </a>
+                </div>
             </form>
         </div>
-
+    </div>
 </body>
 
 </html>
